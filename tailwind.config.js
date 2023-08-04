@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      content: {
+        "shape-mark": 'url("/assets/shape-mark.svg")',
+        "shape-mark-lg": 'url("/assets/shape-mark-big.svg")',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
