@@ -4,6 +4,7 @@ const MarkSvgComponent = (props: any) => (
     width={94}
     height={89}
     fill="none"
+    viewBox="0 0 100 100"
     {...props}
   >
     <path
