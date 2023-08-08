@@ -3,8 +3,11 @@ import Css from '../assets/css.svg';
 import Git from '../assets/git.svg';
 import Html from '../assets/html.svg';
 import Js from '../assets/js.svg';
+import NextJs from '../assets/next-js.svg';
 import React from '../assets/react.svg';
+import Tailwind from '../assets/tailwind-css.svg';
 import Ts from '../assets/ts.svg';
+import Vue from '../assets/vue-js.svg';
 
 interface ITecnologies {
   label: string,
@@ -38,12 +41,16 @@ export const tecnologyIcons: ITecnologies[] = [
     icon: <Image src={Ts} alt={`Icone da tecnologia Typescript`} />
   },
   {
-    label: 'a',
-    icon: <Image src={Ts} alt={`Icone da tecnologia Typescript`} />
+    label: 'Vue Js',
+    icon: <Image src={Vue} alt={`Icone da tecnologia Vue Js`} />
   },
   {
-    label: 'b',
-    icon: <Image src={Ts} alt={`Icone da tecnologia Typescript`} />
+    label: 'Next JS',
+    icon: <Image src={NextJs} alt={`Icone da tecnologia Next Js`} />
+  },
+  {
+    label: 'Tailwind CSS',
+    icon: <Image src={Tailwind} alt={`Icone da tecnologia TailwindCSS`} />
   }
 
 
