@@ -1,0 +1,72 @@
+{
+  "work-experience": [
+    {
+      "dates": {
+        "start": "02/2023",
+        "end": "06/2023"
+      },
+      "role": "Estagiário front-end",
+      "company": "UX Software",
+      "activities": [
+        "Desenvolvimento de uma plataforma para gerenciamento de projetos de engenharia elétrica.",
+        "Utilização de tecnologias como Next JS e Typescript.",
+        "Colaboração estreita com a equipe na definição das tecnologias a serem adotadas.",
+        "Construção e gerenciamento de tarefas para garantir a finalização e entrega do produto ao cliente.",
+        "Uso de ferramentas de controle de versão, como Git, para otimizar o fluxo de trabalho e permitir integração eficaz com outros desenvolvedores."
+      ],
+      "tags": [
+        "HTML 5",
+        "CSS 3",
+        "React Js",
+        "GIT",
+        "Styled Components",
+        "Typescript",
+        "Next JS"
+      ]
+    },
+    {
+      "dates": {
+        "start": "05/2022",
+        "end": "02/2023"
+      },
+      "role": "Estagiário front-end",
+      "company": "Kernel System Informática e Sistema",
+      "activities": [
+        "Trabalho extensivo com React JS e Next Js durante o estágio.",
+        "Entrega de sistemas com diversos focos, incluindo gerenciamento de campanhas, atendimentos e Landing Pages.",
+        "Priorização da aplicação de conhecimentos existentes e novas tecnologias para aprimorar a experiência do usuário.",
+        "Implementação de testes unitários para garantir qualidade do software.",
+        "Utilização do Git para controle de versionamento, integrado ao Bitbucket."
+      ],
+      "tags": [
+        "Next JS",
+        "UI",
+        "HTML 5",
+        "CSS 3",
+        "GIT",
+        "React Js"
+      ]
+    },
+    {
+      "dates": {
+        "start": "08/2021",
+        "end": "02/2023"
+      },
+      "role": "Bolsista front-end",
+      "company": "FUNCAP",
+      "activities": [
+        "Trabalho em um sistema focado no auxílio ao aprendizado de jovens e adultos.",
+        "Utilização da linguagem Vue Js para o desenvolvimento.",
+        "Correção de bugs, adição de novas funcionalidades e depuração de código.",
+        "Atualização do sistema do Vue 2 para o Vue 3 para melhorar segurança e qualidade.",
+        "Uso de tecnologias como Vue, vue-bootstrap e GIT para controle de versionamento."
+      ],
+      "tags": [
+        "Vue 2",
+        "Vue 3",
+        "Vue-bootstrap",
+        "Vuex"
+      ]
+    }
+  ]
+}
