@@ -8,8 +8,8 @@ export default function AboutMe() {
     <section className="relative">
       <SectionTitle title="sobre mim" />
 
-      <div className="flex gap-6 flex-wrap md:flex-nowrap md:gap-24 items-center">
-        <span className="text-base text-gray-7 font-normal max-w-2xl">
+      <div className="flex gap-4 flex-wrap lg:flex-nowrap items-center md:gap-6">
+        <span className="text-sm text-gray-7 font-normal max-w-2xl md:text-base">
           Sou um profissional dedicado e curioso pela área de desenvolvimento web,
           particularmente relacionado ao <span className="font-bold text-pb-dark">front end e UI/UX design</span>,
           com 3 anos de experiência nessa área e comprometido com a entrega.
