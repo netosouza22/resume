@@ -13,7 +13,7 @@ export default function Header() {
   }
 
   return (
-    <header className="justify-between align-middle pt-6 md:flex">
+    <header className="m-auto max-w-6xl justify-between align-middle pt-6 md:flex">
       <div className="w-full flex justify-between">
         <div className="text-black text-5xl font-bold">
           NETO

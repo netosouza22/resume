@@ -1,7 +1,7 @@
 
 export default function TitleSection() {
   return (
-    <section className="flex align-middle content-between justify-center space-x-5 my-12 
+    <section className="m-auto max-w-6xl flex align-middle content-between justify-center space-x-5 my-12 
       
       md:space-x-20 
       md:my-24 
