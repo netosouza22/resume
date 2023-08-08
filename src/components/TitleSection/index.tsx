@@ -21,6 +21,7 @@ export default function TitleSection() {
 
           >
             Desenvolvedor <br className="none" /> Front End
+            <span className="text-pb-light">.</span>
           </h1>
           <p className=" text-gray-8 text-base">
             Meu nome é <span className="font-bold"> Antônio Assis de Sousa Neto </span>
