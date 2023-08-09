@@ -68,5 +68,13 @@
         "Vuex"
       ]
     }
+  ],
+  "courses": [
+    {
+      "company": "Origamid",
+      "duration": "16h",
+      "title": "UI/UX design para iniciantes",
+      "description": "Aprendendo a construir belos designs e conhecendo os principais conceitos do UI."
+    }
   ]
 }
