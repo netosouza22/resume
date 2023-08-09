@@ -41,6 +41,7 @@ module.exports = {
       "pb-light": "#AFD3E2",
       "pb": "#19A7CE",
       "pb-dark": "#146C94",
+      "pb-darker": "#063448",
       "black": "#000000"
     }
   },
