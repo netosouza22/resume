@@ -17,11 +17,12 @@ export default function WorkExperienceCard({ workExperienceData: { activities, c
 
   return (
     <div className="flex items-center gap-16">
-      <div className="hidden relative min-w-[90px] h-[90px] bg-pb-dark rounded-full 
-          md:flex flex-col justify-center items-center z-10 text-gray-2 text-[10px] font-bold
+      <div className="hidden relative min-w-[90px] h-[90px] bg-pb-dark rounded-full shadow-sm
+          md:flex flex-col justify-center items-center z-10 text-gray-light text-[10px] font-bold
           before:absolute before:w-[9px] before:h-[130px] before:rounded-[4px] before:bg-pb-dark 
           before:-top-[22%] before:left-[45.5%] before:-z-20">
         <span>{dates.start}</span>
+        -
         <span>{dates.end}</span>
       </div>
 
@@ -57,7 +58,7 @@ export default function WorkExperienceCard({ workExperienceData: { activities, c
             {
               tags.map((tag) => {
                 return (
-                  <span key={tag} className="px-2 py-0 m-1 bg-white rounded-sm">{tag}</span>
+                  <span key={tag} className="px-2 py-1 m-1 bg-white rounded-md shadow-sm">{tag}</span>
                 )
               })
             }
