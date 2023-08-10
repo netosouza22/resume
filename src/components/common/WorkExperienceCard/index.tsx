@@ -16,7 +16,7 @@ interface IWorkExperience {
 export default function WorkExperienceCard({ workExperienceData: { activities, company, dates, role, tags } }: IWorkExperience) {
 
   return (
-    <div className="flex items-center gap-16 mb-3 md:mb-7">
+    <div className="flex items-center gap-16">
       <div className="hidden relative min-w-[90px] h-[90px] bg-pb-dark rounded-full 
           md:flex flex-col justify-center items-center z-10 text-gray-2 text-[10px] font-bold
           before:absolute before:w-[9px] before:h-[130px] before:rounded-[4px] before:bg-pb-dark 
@@ -57,7 +57,7 @@ export default function WorkExperienceCard({ workExperienceData: { activities, c
             {
               tags.map((tag) => {
                 return (
-                  <span className="px-2 py-0 m-1 bg-white rounded-sm">{tag}</span>
+                  <span key={tag} className="px-2 py-0 m-1 bg-white rounded-sm">{tag}</span>
                 )
               })
             }
