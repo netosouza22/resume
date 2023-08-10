@@ -1,8 +1,10 @@
 'use client';
 import Link from "next/link";
 import { useState } from "react";
+import { BiDownload } from 'react-icons/bi';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { IoCloseSharp } from 'react-icons/io5';
+
 
 export default function Header() {
 
@@ -12,9 +14,10 @@ export default function Header() {
     setShowMenu(state => !state)
   }
 
+
   return (
     <header className="m-auto max-w-6xl justify-between align-middle pt-6 md:flex">
-      <div className="w-full flex justify-between">
+      <div className="flex justify-between">
         <div className="text-black text-5xl font-bold">
           NETO
         </div>
@@ -31,6 +34,7 @@ export default function Header() {
       <nav
         className={`
           absolute
+  
           w-full 
           bg-white
           ${!showMenu ? '-top-64' : 'h-screen py-20 top-[4.5rem] duration-500'} 
@@ -40,25 +44,35 @@ export default function Header() {
           md:relative md:flex md:py-0 md:top-0 md:h-auto md:justify-end`
         }>
         <ul className="flex flex-col items-center bg-white text-gray-8  text-base font-medium md:flex-row md:space-x-10 ">
+
           <li className="my-3  hover:text-pb duration-500 md:my-0">
-            <Link href={"#about-me"}>
-              Sobre mim
-            </Link>
-          </li>
-          <li className="my-3  hover:text-pb duration-500 md:my-0">
-            <Link href={"#work-experience"}>
+            <Link href={"#work-experience"} onClick={handleToggleShowMenu}>
               Experiências
             </Link>
           </li>
           <li className="my-3  hover:text-pb duration-500 md:my-0">
-            <Link href={"#education"}>
+            <Link href={"#education"} onClick={handleToggleShowMenu}>
               Formação
             </Link>
           </li>
           <li className="my-3  hover:text-pb duration-500 md:my-0">
-            <Link href={"#contact-me"}>
+            <Link href={"#contact-me"} onClick={handleToggleShowMenu}>
               Contato
             </Link>
+          </li>
+          <li className="my-3  md:my-0">
+            <a href="/assets/cv.pdf"
+              download="Example-PDF-document"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              <button className="flex items-center gap-3 px-7 py-[0.375rem] bg-pb-dark rounded-lg text-white hover:bg-pb duration-500"
+              >
+                Baixar CV
+                <BiDownload />
+              </button>
+            </a>
+
           </li>
         </ul>
       </nav>
