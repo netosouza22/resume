@@ -7,8 +7,8 @@ import { PiGraduationCap } from 'react-icons/pi';
 
 export default function Education() {
   return (
-    <section className="w-full bg-pb-dark py-[3.75rem] px-4 lg:px-0">
-      <div className="m-auto max-w-6xl">
+    <section id="education" className="w-full bg-pb-dark pt-5 pb-[1.875rem]  md:pt-10 md:pb-[3.75rem] px-4 lg:px-0">
+      <div className="m-auto max-w-6xl flex flex-col md:gap-[2.5rem]">
 
         <SectionTitle title="Formação" colorStyle="light" />
 

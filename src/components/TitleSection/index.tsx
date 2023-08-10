@@ -1,13 +1,18 @@
+import DeveloperImage from '@/assets/dev-final-img.png'
+import Image from 'next/image'
 
 export default function TitleSection() {
+
+
   return (
-    <section className="m-auto max-w-6xl flex align-middle content-between justify-center space-x-5 my-12 
+    <section className="m-auto max-w-6xl flex align-middle content-between justify-center space-x-5 mt-12 mb-6 
       
       md:space-x-20 
-      md:my-24 
       lg:px-24
       ">
-      <div className="hidden h-80 w-96 bg-pb-light md:flex"> adad asd ad asd</div>
+      <div className="hidden h-[22.75rem] w-96 bg-pb-light md:flex">
+        <Image src={DeveloperImage} alt="Image do desenvolvedor" />
+      </div>
 
       <div className="h-auto w-96 flex md:items-center m-auto">
         <div className="space-y-4">
