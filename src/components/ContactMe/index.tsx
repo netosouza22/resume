@@ -22,9 +22,9 @@ export default function ContactMe() {
 
           <div className='space-y-5 md:space-y-[2.125rem]'>
             <ul className="flex gap-8">
-              <li className=""><a href="https://www.linkedin.com/in/netosousa/" target="_blank"><GrLinkedin size={40} /></a></li>
-              <li className=""><a href="https://github.com/netosouza22" target="_blank"><BsGithub size={40} /></a></li>
-              <li className=""><a href="https://wa.me/88999455063" target="_blank"><IoLogoWhatsapp size={40} /></a></li>
+              <li className="hover:text-pb"><a href="https://www.linkedin.com/in/netosousa/" target="_blank"><GrLinkedin size={40} /></a></li>
+              <li className="hover:text-pb"><a href="https://github.com/netosouza22" target="_blank"><BsGithub size={40} /></a></li>
+              <li className="hover:text-pb"><a href="https://wa.me/88999455063" target="_blank"><IoLogoWhatsapp size={40} /></a></li>
             </ul>
 
             <div>
