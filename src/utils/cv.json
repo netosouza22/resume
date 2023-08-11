@@ -67,6 +67,26 @@
         "Vue-bootstrap",
         "Vuex"
       ]
+    },
+    {
+      "dates": {
+        "start": "09/2021",
+        "end": "02/2022"
+      },
+      "role": "Desenvolvedor Freelancer Front-end",
+      "company": "Freelancer",
+      "activities": [
+        "Atuei na criação de um sistema para gerenciamento de licitações de uma cidade.",
+        "Utilização da linguagem React Js e Material UI para o desenvolvimento.",
+        "Criação do protótipo do sistema utilizando o Figma.",
+        "uso do GIT para controle de versionamento."
+      ],
+      "tags": [
+        "React Js",
+        "Formik",
+        "Material UI",
+        "GIT"
+      ]
     }
   ],
   "courses": [
