@@ -68,7 +68,7 @@ export default function WorkExperienceCard({ workExperienceData: { activities, c
               {
                 activities.map((item) => {
                   return (
-                    <li className="list-disc">{item}</li>
+                    <li key={item} className="list-disc">{item}</li>
                   )
                 })
               }
