@@ -107,7 +107,7 @@ export default function Education() {
 
             {cvResume.courses.map((course) => {
               return (
-                <div className='flex flex-col gap-2 text-gray-11 bg-pb-light py-4 px-[0.875rem] rounded'>
+                <div key={course.company} className='flex flex-col gap-2 text-gray-11 bg-pb-light py-4 px-[0.875rem] rounded'>
                   <header className='flex justify-between text-xs font-medium'>
                     <span className='uppercase'>{course.company}</span>
                     <span className='text-gray-9'>{course.duration}</span>
