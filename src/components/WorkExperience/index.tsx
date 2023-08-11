@@ -16,12 +16,10 @@ export default function WorkExperience() {
 `}>
         {
           cvResume["work-experience"].map((workExperience, index) => {
+            return (
+              <WorkExperienceCard workExperienceData={workExperience} />
+            )
 
-            if (index < 3) {
-              return (
-                <WorkExperienceCard workExperienceData={workExperience} />
-              )
-            }
           })
         }
       </div>
