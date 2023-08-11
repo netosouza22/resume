@@ -17,7 +17,7 @@ export default function WorkExperience() {
         {
           cvResume["work-experience"].map((workExperience, index) => {
             return (
-              <WorkExperienceCard workExperienceData={workExperience} />
+              <WorkExperienceCard key={workExperience.company} workExperienceData={workExperience} />
             )
 
           })
