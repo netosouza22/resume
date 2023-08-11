@@ -10,7 +10,7 @@ import ToTopButton from '@/components/common/ToTopButton';
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen min-w-screen bg-white text-gray-10 font-poppins">
+      <main className="min-h-screen min-w-screen bg-white text-gray-10 font-poppins tracking-wider">
         <div>
           <div className="px-4 md:px-12 lg:px-4 xl:px-0">
             <Header />
