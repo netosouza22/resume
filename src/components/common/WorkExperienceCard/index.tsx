@@ -1,3 +1,5 @@
+import { classTranslate } from "@/utils/TailwindVarHelper";
+import { useEffect, useRef, useState } from "react";
 
 interface IWorkExperience {
   workExperienceData: {
@@ -14,22 +16,41 @@ interface IWorkExperience {
 }
 
 export default function WorkExperienceCard({ workExperienceData: { activities, company, dates, role, tags } }: IWorkExperience) {
+  const [isIntersecting, setIsIntersecting] = useState(false)
+
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const Observer: any = new IntersectionObserver(([entry]) => {
+      setIsIntersecting(entry.isIntersecting)
+    })
+
+    Observer.observe(ref.current);
+    return () => Observer.disconnect;
+  }, [])
 
   return (
-    <div className="flex items-center gap-16">
-      <div className="hidden relative min-w-[90px] h-[90px] bg-pb-dark rounded-full shadow-sm
+    <div ref={ref} className={`flex items-center gap-16 `}>
+      <div className={`hidden relative min-w-[90px] h-[90px] bg-pb-dark rounded-full shadow-sm
           md:flex flex-col justify-center items-center z-10 text-gray-light text-[10px] font-bold
           before:absolute before:w-[9px] before:h-[130px] before:rounded-[4px] before:bg-pb-dark 
-          before:-top-[22%] before:left-[45.5%] before:-z-20">
+          before:-top-[22%] before:left-[45.5%] before:-z-20 
+          ${!isIntersecting
+          ? '-translate-x-[150%] opacity-0'
+          : classTranslate.toLeft} duration-500
+          `}>
         <span>{dates.start}</span>
         -
         <span>{dates.end}</span>
       </div>
 
-      <div className="w-full relative bg-gray-light rounded-md py-5 px-4 
+      <div className={`w-full relative bg-gray-light rounded-md py-5 px-4 
         before:absolute before:w-2 before:h-5 before:bg-pb-dark
         before:-left-1 before:top-6 before:rounded-md
-      ">
+        ${!isIntersecting
+          ? '-translate-x-[150%] opacity-0'
+          : classTranslate.toLeft} duration-700
+      `}>
 
         <header className="flex items-center text-gray-10 text-lg font-bold space-x-5">
           <span className="text-gray-9">

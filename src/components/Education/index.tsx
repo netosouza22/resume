@@ -1,19 +1,41 @@
+"use client"
 import cvResume from '@/utils/cv.json';
 import SectionTitle from "../common/SectionTitle";
 import BookOpenSvgComponent from '../common/icons/BookOpenSvgComponent';
 import WorldSvgComponent from "../common/icons/WorldSvgComponent";
 
+import { classTranslate } from '@/utils/TailwindVarHelper';
+import { useEffect, useRef, useState } from 'react';
 import { PiGraduationCap } from 'react-icons/pi';
 
 export default function Education() {
+
+  const [isIntersecting, setIsIntersecting] = useState(false)
+
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const Observer: any = new IntersectionObserver(([entry]) => {
+      setIsIntersecting(entry.isIntersecting)
+    })
+
+    Observer.observe(ref.current);
+    return () => Observer.disconnect;
+  }, [])
+
+
   return (
-    <section id="education" className="w-full bg-pb-dark pt-5 pb-[1.875rem]  md:pt-10 md:pb-[3.75rem] px-4 lg:px-0">
+    <section ref={ref} id="education" className="w-full bg-pb-dark pt-5 pb-[1.875rem]  md:pt-10 md:pb-[3.75rem] px-4 lg:px-0">
       <div className="m-auto max-w-6xl flex flex-col md:gap-[2.5rem]">
 
         <SectionTitle title="Formação" colorStyle="light" />
 
         <main className='flex flex-col justify-between lg:flex-row'>
-          <div className="flex flex-col gap-6 lg:min-w-[31.375rem]">
+          <div className={`flex flex-col gap-6 lg:min-w-[31.375rem]
+             ${!isIntersecting
+              ? '-translate-x-[150%] opacity-0'
+              : classTranslate.toLeft} duration-700
+          `}>
             <div className="space-y-4">
               <header className="text-white flex items-center gap-[0.625rem] font-light">
                 <PiGraduationCap color="" className="text-gray-light font-normal" size={28} font="regular" />
@@ -63,13 +85,21 @@ export default function Education() {
             </div>
           </div>
 
-          <div className="hidden flex-col items-center justify-center gap-24 lg:flex">
+          <div className={`hidden flex-col items-center justify-center gap-24 lg:flex   
+          ${!isIntersecting
+              ? '-translate-x-[150%] opacity-0'
+              : classTranslate.toLeft} duration-700
+          `}>
             <div className="w-1 h-2 bg-pb-light rounded"></div>
             <div className="w-1 h-2 bg-pb-light rounded"></div>
             <div className="w-1 h-2 bg-pb-light rounded"></div>
           </div>
 
-          <div className='space-y-4'>
+          <div className={`space-y-4   
+          ${!isIntersecting
+              ? '-translate-x-[150%] opacity-0'
+              : classTranslate.toLeft} duration-700
+          `}>
             <header className="text-white flex items-center gap-[10px] font-light">
               <BookOpenSvgComponent />
               <span className="text-base text-gray-1 font-bold">Cursos</span>

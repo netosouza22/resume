@@ -1,26 +1,49 @@
+"use client"
 import { BsGithub } from 'react-icons/bs';
 import { GrLinkedin } from 'react-icons/gr';
 import { IoLogoWhatsapp } from 'react-icons/io';
 
+import { classTranslate } from '@/utils/TailwindVarHelper';
+import { useEffect, useRef, useState } from 'react';
 import SectionTitle from "../common/SectionTitle";
 
 
 export default function ContactMe() {
+  const [isIntersecting, setIsIntersecting] = useState(false)
+
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const Observer: any = new IntersectionObserver(([entry]) => {
+      setIsIntersecting(entry.isIntersecting)
+    })
+
+    Observer.observe(ref.current);
+    return () => Observer.disconnect;
+  }, [])
+
+
   return (
-    <section id="contact-me" className="w-full bg-pb-darker pt-[3.75rem] px-4 lg:px-0">
+    <section ref={ref} id="contact-me" className="w-full bg-pb-darker pt-[3.75rem] px-4 lg:px-0">
       <div className="m-auto max-w-6xl">
 
         <SectionTitle title="Contato" colorStyle="light" />
 
-        <div className="flex flex-col gap-10  text-gray-light text-2xl font-bold 
-            mt-8 mb-[3.75rem] md:flex-row md:justify-between md:items-center">
+        <div className={`flex flex-col gap-10  text-gray-light text-2xl font-bold 
+            mt-8 mb-[3.75rem] md:flex-row md:justify-between md:items-center
+            ${!isIntersecting
+            ? '-translate-x-[150%] opacity-0'
+            : classTranslate.toLeft} duration-700`}>
           <p className="md:max-w-[500px]">
             Estou disponível para novos projetos.
             Entre em contato comigo e vamos <br />
             ter uma conversa.
           </p>
 
-          <div className='space-y-5 md:space-y-[2.125rem]'>
+          <div className={`space-y-5 md:space-y-[2.125rem]
+           ${!isIntersecting
+              ? '-translate-x-[150%] opacity-0'
+              : classTranslate.toLeft} duration-700`}>
             <ul className="flex gap-8">
               <li className="hover:text-pb"><a href="https://www.linkedin.com/in/netosousa/" target="_blank"><GrLinkedin size={40} /></a></li>
               <li className="hover:text-pb"><a href="https://github.com/netosouza22" target="_blank"><BsGithub size={40} /></a></li>
