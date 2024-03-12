@@ -22,7 +22,8 @@
         "socket-io",
         "Typescript",
         "Next JS",
-        "React-query"
+        "React-query",
+        "context-api"
       ]
     },
     {
@@ -69,7 +70,8 @@
         "HTML 5",
         "CSS 3",
         "GIT",
-        "React Js"
+        "React Js",
+        "redux"
       ]
     },
     {
