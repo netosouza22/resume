@@ -13,7 +13,7 @@ export default function WorkExperience() {
       <SectionTitle title="Experiência" />
 
       <div className={`flex flex-col gap-4 md:gap-5       
-`}>
+max-h-[31.25rem] overflow-y-auto border border-pb  rounded-md p-4`} >
         {
           cvResume["work-experience"].map((workExperience, index) => {
             return (

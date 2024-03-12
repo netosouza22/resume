@@ -2,17 +2,42 @@
   "work-experience": [
     {
       "dates": {
+        "start": "10/2023",
+        "end": "Atualmente"
+      },
+      "role": "Desenvolvedor Web",
+      "company": "UX Software",
+      "activities": [
+        "Liderei e atuei no desenvolvimento de uma plataforma de atendimento para serviços de suporte em ativos de rede de fibra óptica;",
+        "Utilizei tecnologias como Node Js, React Js, Next JS e typescript para poder construir a aplicação de forma componentizada e organizada, prezando pela entrega e qualidade",
+        "Utilizando o GIT para o versionamento, assim como seus processos de git flow;",
+        "Auxiliei na definição da arquitetura de pastas em projetos desenvolvidos em Next.js e React.js, assim como garantir uma organização lógica e eficiente do código",
+        "Garanti que fosse possível a integração de forma eficientemente de tecnologias como React.js, Next.js e React Query, adaptando a mudanças rápidas nos requisitos, garantindo assim a entrega."
+      ],
+      "tags": [
+        "Node Js",
+        "React Js",
+        "GIT",
+        "Tailwind",
+        "socket-io",
+        "Typescript",
+        "Next JS",
+        "React-query"
+      ]
+    },
+    {
+      "dates": {
         "start": "02/2023",
         "end": "06/2023"
       },
-      "role": "Estagiário front-end",
+      "role": "Desenvolvedor front-end",
       "company": "UX Software",
       "activities": [
-        "Desenvolvimento de uma plataforma para gerenciamento de projetos de engenharia elétrica.",
-        "Utilização de tecnologias como Next JS e Typescript.",
-        "Colaboração estreita com a equipe na definição das tecnologias a serem adotadas.",
-        "Construção e gerenciamento de tarefas para garantir a finalização e entrega do produto ao cliente.",
-        "Uso de ferramentas de controle de versão, como Git, para otimizar o fluxo de trabalho e permitir integração eficaz com outros desenvolvedores."
+        "Utilizei as tecnologias do Next JS, React Js e Typescript para estilização foi usado o styled-components sendo auxiliado pela biblioteca Material UI;",
+        "Trabalhei no desenvolvimento de uma plataforma para gerenciamento de projetos de engenharia elétrica",
+        "Como principal responsável pela construção do front-end cooperei na organização, distribuição e acompanhamento das tarefas da equipe",
+        "Consumi dados a partir de uma Rest API e todo o design do sistema foi feito a partir do figma",
+        "Utilizei o GIT para controlar e facilitar a colaboração e docker para a integração com o backend."
       ],
       "tags": [
         "HTML 5",
@@ -84,6 +109,27 @@
       "tags": [
         "React js",
         "Figma",
+        "Git",
+        "Javascript"
+      ]
+    },
+    {
+      "dates": {
+        "start": "12/2019",
+        "end": "08/2021"
+      },
+      "role": "Desenvolvedor Front-end",
+      "company": "Lodaing Desenvolvimento Jr.",
+      "activities": [
+        "Atuei na criação de site intitucional para empresa local em Sobral e criação de ferramenta interna;",
+        "Utilização da linguagem React Js e Styled-Components para o desenvolvimento de uma plataforma de gamificação;",
+        "Utilização de Bootstrap e JQuery a fim de acelerar a contrução do sistema;",
+        "Foi usado o GIT para controle de versionamento."
+      ],
+      "tags": [
+        "Bootstrap",
+        "React js",
+        "JQuery",
         "Git",
         "Javascript"
       ]
