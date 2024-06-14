@@ -61,8 +61,7 @@ export default function Header() {
             </Link>
           </li>
           <li className="my-3  md:my-0">
-            <a href="/assets/cv.pdf"
-              download="Example-PDF-document"
+            <a href="/assets/antonio_assis_de_sousa_neto_curriculo.pdf"
               target="_blank"
               rel="noopener noreferrer">
 
